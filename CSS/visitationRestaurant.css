@@ -1,0 +1,93 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #696969;
+}
+
+.navbar {
+    background-color: #5A5A5A;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: auto; /* Šířka dlaždice */
+    height: auto; /* Výška dlaždice */
+    margin: 10px; /* Odsazení mezi dlaždicemi */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tile h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tile p {
+    font-size: 14px;
+    color: #888;
+}
+.change-text:hover{
+    content: "Logout";
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Dlaždice se budou řadit ve sloupcích */
+        align-items: center; /* Dlaždice budou zarovnány do středu */
+    }
+
+    .tile {
+        width: 87%; /* Dlaždice budou zabírat celou šířku */
+    }
+    /*Upraveno*/
+    .navbar {
+        flex-direction: column; /* Menu se bude řadit ve sloupcích */
+        align-items: flex-start; /* Položky budou zarovnány nalevo */
+        width: 90%;
+    }
+
+    .navbar-menu {
+        margin-top: 10px; /* Odsazení mezi jednotlivými položkami */
+    }
+
+    .navbar-menu li {
+        margin: 0 10px; /* Odsazení mezi jednotlivými položkami */
+    }
+
+    .navbar-menu li a {
+        font-size: 12px; /* Zvětšení velikosti písma pro mobilní zařízení */
+    }
+}

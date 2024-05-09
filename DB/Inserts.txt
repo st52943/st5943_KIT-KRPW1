@@ -1,0 +1,9 @@
+INSERT INTO UsersRole (ID, Role)
+VALUES
+(1, 'Owner'),
+(2, 'User');
+
+INSERT INTO Users (ID, UsersRole_ID, username, password, Description)
+VALUES
+(1, 1, 'owner', 'owner123', 'Owner'),
+(2, 2, 'user', 'user123', 'User');

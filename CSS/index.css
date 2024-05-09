@@ -1,0 +1,86 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #696969;
+
+}
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximální šířka divu */
+    margin: 10vh auto; /* Vertikální zarovnání doprostřed */
+}
+
+.container h2 {
+    font-size: 2em; /* Velký nadpis */
+}
+
+.container p {
+    font-size: 1.2em; /* Menší popis */
+    color: #666; /* Barva popisu */
+}
+
+.navbar {
+    background-color: #5A5A5A;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.change-text:hover{
+    content: "Logout";
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        margin-top: 10px;
+    }
+
+    .navbar-menu li {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    .navbar-menu li a {
+        font-size: 12px;
+    }
+}
